@@ -36,14 +36,16 @@ const Layout = ({ children }) => (
 
         </div>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <article>
-          <main>{children}</main>
-          <footer>
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
-          </footer>
-        </article>
+        <main>
+          <article>
+            {children}
+          </article>
+        </main>
+        <footer>
+              © {new Date().getFullYear()}, Built with
+              {` `}
+              <a href="https://www.gatsbyjs.org">Gatsby</a>
+        </footer>
       </>
     )}
   />
