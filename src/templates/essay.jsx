@@ -1,27 +1,36 @@
 import React from "react";
 import Helmet from "react-helmet";
+import PageMetadata from "../components/page-metadata";
+import Layout from "../components/layout"
 
 export default function Template({
     data
 }) {
-    const post = data.markdownRemark; 
+    const essay = data.markdownRemark; 
     return (
-      <div className="essay-container">
-       <Helmet title={`CodeStack - ${post.frontmatter.title}`} />
-        <div className="essay">
-          <h1>{post.frontmatter.title}</h1>
-          <div
-            className="blog-post-content"
-            dangerouslySetInnerHTML={{ __html: post.html }}
-          />
-        </div>
-      </div>
+      <Layout>
+        <article>
+          <div class="metadata-container">
+            <PageMetadata abstract={ essay.frontmatter.abstract} tags={essay.frontmatter.tags}/>
+          </div>
+          <div className="essay-container">
+            <Helmet title={`CodeStack - ${essay.frontmatter.title}`} />
+            <div className="essay">
+              <h1>{essay.frontmatter.title}</h1>
+              <div
+                className="essay-content"
+                dangerouslySetInnerHTML={{ __html: essay.html }}
+              />
+            </div>
+          </div>
+        </article>
+      </Layout>
     );
 }
 
 export const pageQuery = graphql`
-  query BlogPostByPath($path: String!) {
-    markdownRemark(frontmatter: { path: { eq: $path }, name: {eq: "essay"} }) {
+  query EssayByPath($path: String!) {
+    markdownRemark(frontmatter: { path: { eq: $path }}) {
       html
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
@@ -30,6 +39,7 @@ export const pageQuery = graphql`
         tags
         status
         belief
+        abstract
       }
     }
   }

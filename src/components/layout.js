@@ -12,6 +12,7 @@ import Image from "../components/image"
 
 import Header from "./header"
 import "../assets/css/base.css"
+import PageMetadata from "./page-metadata";
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -37,9 +38,7 @@ const Layout = ({ children }) => (
         </div>
         <Header siteTitle={data.site.siteMetadata.title} />
         <main>
-          <article>
             {children}
-          </article>
         </main>
         <footer>
               © {new Date().getFullYear()}, Built with

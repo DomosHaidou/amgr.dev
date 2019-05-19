@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `AMGR.dev`,
-    description: `TEST`,
+    description: `This is the website of **Allan MacGregor**, software engineer & writer. I'm mostly interested in technology and self-improvement.`,
     author: `@allanmacgregor`,
   },
   plugins: [

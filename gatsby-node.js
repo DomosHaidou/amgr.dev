@@ -8,7 +8,7 @@
 const path = require('path');
 exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators;
-const blogPostTemplate = path.resolve(`src/templates/essay.jsx`);
+const essayTemplate = path.resolve(`src/templates/essay.jsx`);
 return graphql(`{
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
@@ -22,6 +22,7 @@ return graphql(`{
           frontmatter {
             date
             path
+            abstract
             title
           }
         }
@@ -36,7 +37,7 @@ result.data.allMarkdownRemark.edges
         .forEach(({ node }) => {
           createPage({
             path: node.frontmatter.path,
-            component: blogPostTemplate,
+            component: essayTemplate,
             context: {} // additional data can be passed via context
           });
         });

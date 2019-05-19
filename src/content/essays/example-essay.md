@@ -5,7 +5,8 @@ date: "2017-07-12T17:12:33.962Z"
 tags: nootropics, psychology, experiments, predictions, statistics, Silk Road
 status: finished
 belief: likely
-path: "/example-essay"
+path: "/essay/example-essay"
+abstract: History, background, visiting, ordering, using, & analyzing the drug market Silk Road 1
 ---
 
 > Some early experimental studies with LSD suggested that doses of LSD too small to cause any noticeable effects may improve mood and creativity. Prompted by recent discussion of this claim and the purely anecdotal subsequent evidence for it, I decided to run a well-powered randomized blind trial of 3-day LSD microdoses from September 2012 to March 2013. No beneficial effects reached statistical-significance and there were worrisome negative trends. LSD microdosing did not help me.
