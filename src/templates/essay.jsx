@@ -12,7 +12,7 @@ export default function Template({
         <header><h1>{essay.frontmatter.title}</h1></header>
         <article>
           <div class="metadata-container">
-              <PageMetadata abstract={ essay.frontmatter.abstract} tags={essay.frontmatter.tags}/>
+              <PageMetadata updated_at={essay.fields.modifiedTime} abstract={ essay.frontmatter.abstract} tags={essay.frontmatter.tags}  created_at={essay.frontmatter.date} confidence={essay.frontmatter.confidence} status={essay.frontmatter.status} />
           </div>
           <div id="TOC" dangerouslySetInnerHTML={{ __html: essay.tableOfContents }}/> 
           <div id="markdownBody">
@@ -35,6 +35,9 @@ export const pageQuery = graphql`
         pathToSlugField: "frontmatter.path"
         maxDepth: 4
       )
+      fields{
+        modifiedTime(formatString: "MMMM DD, YYYY")
+      }
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         path

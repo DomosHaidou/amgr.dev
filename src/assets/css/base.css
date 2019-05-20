@@ -3830,6 +3830,14 @@ body.dnmarrests .tableWrapper#data-table td:last-of-type {
     text-indent:0;
 }
 
+#page-metadata #information {
+    text-indent:0;
+}
+#page-metadata #information span:not(:first-child){
+    border-left:1px solid #000;
+    padding-left: 10px;
+    margin-left: 10px;
+} 
 /*************/
 /* DARK MODE */
 /*************/
