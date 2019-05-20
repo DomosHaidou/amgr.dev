@@ -72,3 +72,42 @@ return graphql(`{
         });
     });
 }
+
+exports.createPages = ({ boundActionCreators, graphql }) => {
+  const { createPage } = boundActionCreators;
+  const markdownPageTemplate = path.resolve(`src/templates/markdown-page.jsx`);
+  return graphql(`{
+      allMarkdownRemark(
+        sort: { order: DESC, fields: [frontmatter___date] }
+        limit: 1000
+      ) {
+        edges {
+          node {
+            excerpt(pruneLength: 250)
+            html
+            id
+            frontmatter {
+              date
+              path
+              title
+            }
+          }
+        }
+      }
+    }`)
+    .then(result => {
+      if (result.errors) {
+        return Promise.reject(result.errors);
+      }
+      const markdownPages = result.data.allMarkdownRemark.edges
+
+      // Create post detail pages
+      markdownPages.forEach(({ node }) => {
+          createPage({
+            path: node.frontmatter.path,
+            component: markdownPageTemplate,
+            context: {} // additional data can be passed via context
+          });
+        });
+    });
+}
