@@ -6,9 +6,12 @@
 
 // You can delete this file if you're not using it
 const path = require('path');
+const _ = require("lodash");
+
 exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators;
-const essayTemplate = path.resolve(`src/templates/essay.jsx`);
+  const essayTemplate = path.resolve(`src/templates/essay.jsx`);
+  const tagTemplate = path.resolve(`src/templates/tags.jsx`);
 return graphql(`{
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
@@ -24,6 +27,7 @@ return graphql(`{
             path
             abstract
             title
+            tags
           }
         }
       }
@@ -33,12 +37,37 @@ return graphql(`{
       if (result.errors) {
         return Promise.reject(result.errors);
       }
-result.data.allMarkdownRemark.edges
-        .forEach(({ node }) => {
+      const essays = result.data.allMarkdownRemark.edges
+
+      // Create post detail pages
+      essays.forEach(({ node }) => {
           createPage({
             path: node.frontmatter.path,
             component: essayTemplate,
             context: {} // additional data can be passed via context
+          });
+        });
+
+        // Tag pages:
+        let tags = []
+        // Iterate through each post, putting all found tags into `tags`
+        _.each(essays, edge => {
+          if (_.get(edge, "node.frontmatter.tags")) {
+            tags = tags.concat(edge.node.frontmatter.tags)
+          }
+        })
+
+        // Eliminate duplicate tags
+        tags = _.uniq(tags)
+
+        // Make tag pages
+        tags.forEach(tag => {
+          createPage({
+            path: `/tags/${_.kebabCase(tag)}/`,
+            component: tagTemplate,
+            context: {
+              tag,
+            },
           });
         });
     });

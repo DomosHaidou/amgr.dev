@@ -2,7 +2,7 @@
 title: LSD microdosing RCT
 description: Self-experiment with sub-psychedelic doses of LSD; no benefit
 date: "2017-07-12T17:12:33.962Z"
-tags: nootropics, psychology, experiments, predictions, statistics, Silk Road
+tags: ["nootropics", "psychology", "experiments", "predictions", "statistics", "Silk Road"]
 status: finished
 belief: likely
 path: "/essay/example-essay"
