@@ -8,3 +8,20 @@ abstract: Meta page intended to collect notes and ideas waiting to be developed
 status: notes
 confidence: log
 ---
+
+# Technology
+
+## Software Engineering
+
+## Ecommerce 
+### Evolution of Ecommerce Engineering
+
+# Physiology
+
+## Nutrition
+### Effects of Ketogenic Diet on Performance
+
+
+## Microdosing
+### Self-experiment: LSD
+### Self-experiment: Cannabis
