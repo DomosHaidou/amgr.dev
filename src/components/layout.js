@@ -34,6 +34,7 @@ const Layout = ({ children }) => (
              <Link to="/">Home</Link>
              <Link to="/site">Site</Link>
              <Link to="/about">Me</Link>
+             <Link to="/tags">Tags</Link>
           </div>
 
         </div>
@@ -41,9 +42,9 @@ const Layout = ({ children }) => (
             {children}
         </main>
         <footer>
-              © {new Date().getFullYear()}, Built with
+              © {new Date().getFullYear()}
               {` `}
-              <a href="https://www.gatsbyjs.org">Gatsby</a>
+              <a href="https://www.amgr.dev/about">AMGR</a>
         </footer>
       </>
     )}
