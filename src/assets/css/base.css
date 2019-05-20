@@ -576,6 +576,7 @@ header h1 {
     */
 #markdownBody p {
     font-variant-numeric: oldstyle-nums;
+    padding-bottom: 10px;
 }
 
 #markdownBody > blockquote:first-child,
@@ -822,6 +823,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 1.25em 0 0.5em -0.75rem;
     font-weight: bold;
     position: relative;
+    text-align: right;
 }
 @media only screen and (max-width: 65ch) {
     h1, h2, h3, h4, h5, h6 {
@@ -3826,6 +3828,14 @@ body.dnmarrests .tableWrapper#data-table td:last-of-type {
     font-style: italic;
 }
 
+#page-metadata #tags span:not(:first-child){
+} 
+
+#page-metadata #tags span:not(:last-child):after {
+    content:", ";
+	color:#aaa;
+}
+
 #page-metadata #topics {
     text-indent:0;
 }
@@ -3833,6 +3843,7 @@ body.dnmarrests .tableWrapper#data-table td:last-of-type {
 #page-metadata #information {
     text-indent:0;
 }
+
 #page-metadata #information span:not(:first-child){
     border-left:1px solid #000;
     padding-left: 10px;

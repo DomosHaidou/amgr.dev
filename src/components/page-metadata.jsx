@@ -14,7 +14,6 @@ const PageMetadata = ({ abstract, tags, updated_at, created_at, status, confiden
                         return (
                             <span>
                                 <Link to={"/tags/" + _.kebabCase(tag)}>{tag}</Link> 
-                                <span>,</span>
                             </span>
                         )
                 })}
