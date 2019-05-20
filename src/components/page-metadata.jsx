@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 const _ = require("lodash");
 
 
-const PageMetadata = ({ abstract, tags }) => (
+const PageMetadata = ({ abstract, tags, created_at, status, confidence }) => (
       <div id="page-metadata">
           <p id="abstract">{abstract}</p>
           <p id="topics">topics: 
@@ -20,6 +20,11 @@ const PageMetadata = ({ abstract, tags }) => (
                 })}
                 </em>
             </span>
+          </p>
+          <p id="information">
+                <span id="created_at">created: <em>{created_at}</em></span>
+                <span id="status">status: <em>{status}</em></span>
+                <span id="confidence">confidence: <em>{confidence}</em></span>
           </p>
       </div>
   )

@@ -41,7 +41,7 @@ export const pageQuery = graphql`
         title
         tags
         status
-        belief
+        confidence
         abstract
       }
     }

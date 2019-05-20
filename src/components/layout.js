@@ -36,7 +36,6 @@ const Layout = ({ children }) => (
              <Link to="/pages/about">Me</Link>
              <Link to="/tags">Tags</Link>
           </div>
-
         </div>
         <main>
             {children}

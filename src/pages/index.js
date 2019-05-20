@@ -84,7 +84,7 @@ query {
           title
           tags
           status
-          belief
+          confidence
           abstract
         }
       }
