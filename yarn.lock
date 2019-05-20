@@ -4743,6 +4743,24 @@ gatsby-react-router-scroll@^2.0.7:
     scroll-behavior "^0.9.9"
     warning "^3.0.0"
 
+gatsby-remark-autolink-headers@^2.0.16:
+  version "2.0.16"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-autolink-headers/-/gatsby-remark-autolink-headers-2.0.16.tgz#90060b04eab9788f63cfeab9559f88ff0bab4474"
+  integrity sha512-8y79jScAcPk8eZqCFTtrDsDy0c9VAy/jYPgfW4w+bvD4iOf/39RGT3RVlRiM9S8223sQkil/TA9xwYkTHjeGTQ==
+  dependencies:
+    "@babel/runtime" "^7.0.0"
+    github-slugger "^1.1.1"
+    lodash "^4.17.11"
+    mdast-util-to-string "^1.0.2"
+    unist-util-visit "^1.3.0"
+
+gatsby-remark-sectionize@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-sectionize/-/gatsby-remark-sectionize-1.0.0.tgz#3b2c7e407738160fe3dd1d62db955cc64e8ceea4"
+  integrity sha512-S6FefaA1KlBDRNw/RaH8iRUzdcFgB8nBYox3hraXqLsfRETRkY668ay6xo8iSNyl/XG+L6fjaNBss0KcmAqBSg==
+  dependencies:
+    remark-sectionize "^1.0.1"
+
 gatsby-source-filesystem@^2.0.33:
   version "2.0.33"
   resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-2.0.33.tgz#c8b4ed9a231a325ca356f739bab77ea8fad5824d"
@@ -9763,6 +9781,14 @@ remark-retext@^3.1.0:
   dependencies:
     mdast-util-to-nlcst "^3.2.0"
 
+remark-sectionize@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/remark-sectionize/-/remark-sectionize-1.0.1.tgz#9116d892eefd4a625e7ab9858e2dd217cdb685ac"
+  integrity sha512-C8lBqGI2p70tRCW0ZKSrTDDDjANVL/m0LzXG9b88VQo9x6828eK5m/YpHGxtojeHnIfPc5J/EABusMYOxQMxJQ==
+  dependencies:
+    unist-util-find-after "^2.0.2"
+    unist-util-visit-parents "^2.0.1"
+
 remark-stringify@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/remark-stringify/-/remark-stringify-5.0.0.tgz#336d3a4d4a6a3390d933eeba62e8de4bd280afba"
@@ -11444,6 +11470,13 @@ unist-builder@^1.0.1:
   dependencies:
     object-assign "^4.1.0"
 
+unist-util-find-after@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/unist-util-find-after/-/unist-util-find-after-2.0.2.tgz#018a18b757c43eeff7099f5c03bc6f50b0055dfd"
+  integrity sha512-QBPTtRUZnLmJ5+NbBI4eP3hDq6yFv2CFjJd+jn9D5HbOuHArrwtrGbVQyZZujtOvXp7276lROixmMP0Nn/hVAw==
+  dependencies:
+    unist-util-is "^2.0.0"
+
 unist-util-generated@^1.1.0:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/unist-util-generated/-/unist-util-generated-1.1.3.tgz#ca650470aef2fbcc5fe54c465bc26b41ca109e2b"
@@ -11496,6 +11529,13 @@ unist-util-visit-parents@^2.0.0:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/unist-util-visit-parents/-/unist-util-visit-parents-2.0.1.tgz#63fffc8929027bee04bfef7d2cce474f71cb6217"
   integrity sha512-6B0UTiMfdWql4cQ03gDTCSns+64Zkfo2OCbK31Ov0uMizEz+CJeAp0cgZVb5Fhmcd7Bct2iRNywejT0orpbqUA==
+  dependencies:
+    unist-util-is "^2.1.2"
+
+unist-util-visit-parents@^2.0.1:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/unist-util-visit-parents/-/unist-util-visit-parents-2.1.0.tgz#e45cad0d7e5ac683362088b329bc80abd1cfc5fb"
+  integrity sha512-j0XZY3063E6v7qhx4+Q2Z0r8SMrLX7Mr6DabiCy67zMEcFQYtpNOplLlEK1KKEBEs9S+xB5U+yloQxbSwF9P/g==
   dependencies:
     unist-util-is "^2.1.2"
 

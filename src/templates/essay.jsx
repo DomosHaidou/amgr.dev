@@ -10,10 +10,12 @@ export default function Template({
     return (
       <Layout>
         <article>
-          <div id="markdownBody">
-            <div class="metadata-container">
+          <div class="metadata-container">
               <PageMetadata abstract={ essay.frontmatter.abstract} tags={essay.frontmatter.tags}/>
             </div>
+          <div id="TOC" dangerouslySetInnerHTML={{ __html: essay.tableOfContents }}/> 
+          <div id="markdownBody">
+ 
             <Helmet title={`CodeStack - ${essay.frontmatter.title}`} />
               <h1>{essay.frontmatter.title}</h1>
               <div
@@ -30,6 +32,10 @@ export const pageQuery = graphql`
   query EssayByPath($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path }}) {
       html
+      tableOfContents(
+        pathToSlugField: "frontmatter.path"
+        maxDepth: 4
+      )
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         path
