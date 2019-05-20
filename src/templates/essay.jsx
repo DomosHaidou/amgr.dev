@@ -9,15 +9,14 @@ export default function Template({
     const essay = data.markdownRemark; 
     return (
       <Layout>
+        <header><h1>{essay.frontmatter.title}</h1></header>
         <article>
           <div class="metadata-container">
               <PageMetadata abstract={ essay.frontmatter.abstract} tags={essay.frontmatter.tags}/>
-            </div>
+          </div>
           <div id="TOC" dangerouslySetInnerHTML={{ __html: essay.tableOfContents }}/> 
           <div id="markdownBody">
- 
             <Helmet title={`CodeStack - ${essay.frontmatter.title}`} />
-              <h1>{essay.frontmatter.title}</h1>
               <div
                 className="essay-content"
                 dangerouslySetInnerHTML={{ __html: essay.html }}

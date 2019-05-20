@@ -11,7 +11,7 @@ abstract: History, background, visiting, ordering, using, & analyzing the drug m
 
 > Some early experimental studies with LSD suggested that doses of LSD too small to cause any noticeable effects may improve mood and creativity. Prompted by recent discussion of this claim and the purely anecdotal subsequent evidence for it, I decided to run a well-powered randomized blind trial of 3-day LSD microdoses from September 2012 to March 2013. No beneficial effects reached statistical-significance and there were worrisome negative trends. LSD microdosing did not help me.
 
-[Intrigued](#microdosing) by old scientific results & many positive anecdotes since, I experimented with "microdosing" [LSD](!Wikipedia "Lysergic acid diethylamide") - taking doses ~10μg, far below the level at which it causes its famous effects. At this dosage, the anecdotes claim the usual generic spectrum of positive effects on mood, depression, ability to do work, etc. After researching the matter a bit, I discovered that as far as I could tell, since the original experiment in the 1960s, no one had ever done a blind or even a randomized self-experiment on it.
+[Intrigued](#microdosing) by old scientific results & many positive anecdotes since, I experimented with "microdosing" [LSD](!Wikipedia "Lysergic acid diethylamide") - taking doses ~10μg, far below the level at which it causes its famous effects. At this dosage, the anecdotes claim the usual generic spectrum of positive effects on mood, depression, ability to do work, etc. **After researching the matter** a bit, I discovered that as far as I could tell, since the original experiment in the 1960s, no one had ever done a blind or even a randomized self-experiment on it.
 
 The self-experiment was simple: I calculated [how many doses I needed](#power-calculation) and whether the experiment was [worth running](#voi), ordered 2 250μg tabs off [Silk Road](Silk Road#lsd-case-study), [designed](#design) the experiment (I dissolved one in distilled water, put the solution in one jar & tap water in the other, and took them in pairs of 3-day blocks), ran it, and analyzed it.
 
@@ -30,6 +30,20 @@ The [results of my pre-specified analysis](#testing-the-metrics):
 4. Creativity: none (_d_=-0.19; _p_=0.28)
 
 I concluded that if anything, the LSD microdosing may have done the opposite of what I wanted.
+
+```javascript{numberLines: 5}
+// In your gatsby-config.js
+plugins: [
+  {
+    resolve: `gatsby-transformer-remark`,
+    options: {
+      plugins: [
+        `gatsby-remark-prismjs`,
+      ]
+    }
+  }
+]
+```
 
 Given that this is the opposite of almost all microdosing anecdotes and this pattern suggests [placebo](!Wikipedia) & [expectancy effects](!Wikipedia "Subject-expectancy effect"), I strongly urge any future self-experimenters to up their methodological rigor, and especially to blind their doses to avoid both placebo & [nocebo](!Wikipedia) effects. If they fear the consequences of publication, I am willing to host their writeup on this page; [my PGP key is available](Links#contact).
 
@@ -638,7 +652,7 @@ One final detail to go with the previous analysis is to take a look at whether t
 
 I classified by hand each day in the relevant period by how many days distant it was from the preceding LSD microdose (that is, the first day of an LSD block is 0, the second day is 1, the third day is 2, and so on up to 7, and past that I just round down to 7). The idea is that this lets us ask for a linear fit relating MP on days which are _n_ distant from a LSD microdose and see if there's any apparent trend - it may be that we failed to see a statistically-significant relationship because we lumped in all days together.
 
-~~~{.R}
+```rust
 model1 <- lm(MP ~ DaysSince, data=lsd); summary(model1)
 
 Residuals:

@@ -26,11 +26,16 @@ html {
 
     font-weight: 400;
     font-size: 18px;
-    font-family: "Source Serif Pro", Baskerville, "Libre Baskerville", serif;
+    font-family: 'PT Serif';
 }
 body {
     max-width: 112ch;
 }
+
+strong, b {
+    font-weight: 700;
+}
+
 @media only screen and (max-width: 64.9ch) {
     html {
         font-size: 18px;
@@ -821,6 +826,15 @@ h1, h2, h3, h4, h5, h6 {
     h1, h2, h3, h4, h5, h6 {
         margin: 1.25em 0 0.5em 0;
     }
+}
+
+.essay-content h1 {
+    margin: 1.75em 0 0.375em -0.75rem;
+    font-size: 2em;
+    overflow: hidden;
+    padding: 0 0 3px 0.75rem;
+    box-shadow: 0 -5px 0 0 #fff inset, 0 -6px 0 0 #888 inset;
+    text-align: right;
 }
 
 /*=-------------------------=*/
@@ -3920,3 +3934,40 @@ body.dnmarrests .tableWrapper#data-table td:last-of-type {
         filter: invert(100%);
     }
 }
+
+
+.gatsby-highlight-code-line {
+    background-color: #feb;
+    display: block;
+    margin-right: -1em;
+    margin-left: -1em;
+    padding-right: 1em;
+    padding-left: 0.75em;
+    border-left: 0.25em solid #f99;
+  }
+/**
+ * If you already use line highlighting
+ */
+
+/* Adjust the position of the line numbers */
+.gatsby-highlight pre[class*="language-"].line-numbers {
+    padding-left: 2.8em;
+  }
+  
+  /**
+   * If you only want to use line numbering
+   */
+  
+  .gatsby-highlight {
+    /* background-color: #fdf6e3;
+    border-radius: 0.3em;
+    margin: 0.5em 0;
+    padding: 1em; */
+    overflow: auto;
+  }
+  
+  .gatsby-highlight pre[class*="language-"].line-numbers {
+    padding: 0;
+    padding-left: 2.8em;
+    overflow: initial;
+  }
