@@ -1,8 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: `AMGR.dev`,
-    description: `This is the website of **Allan MacGregor**, software engineer & writer. I'm mostly interested in technology and self-improvement.`,
-    author: `@allanmacgregor`,
+    description: `This is the website of **Allan MacGregor**, software engineer & writer. I'm mostly interested in technology, software engineering and self-improvement; I'm best known for my work on\
+     [ecommerce development](/ecommerce-engineering) and [software engineering](/software-engineering).`,
+     information: `For information about my site’s philosophy, method, traffic statistics, and implementation, see the [About page](/about); for information about myself, my use of other websites, and contact information.`,
+     author: `@allanmacgregor`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

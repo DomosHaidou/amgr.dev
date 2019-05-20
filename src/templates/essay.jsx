@@ -10,18 +10,16 @@ export default function Template({
     return (
       <Layout>
         <article>
-          <div class="metadata-container">
-            <PageMetadata abstract={ essay.frontmatter.abstract} tags={essay.frontmatter.tags}/>
-          </div>
-          <div className="essay-container">
+          <div id="markdownBody">
+            <div class="metadata-container">
+              <PageMetadata abstract={ essay.frontmatter.abstract} tags={essay.frontmatter.tags}/>
+            </div>
             <Helmet title={`CodeStack - ${essay.frontmatter.title}`} />
-            <div className="essay">
               <h1>{essay.frontmatter.title}</h1>
               <div
                 className="essay-content"
                 dangerouslySetInnerHTML={{ __html: essay.html }}
               />
-            </div>
           </div>
         </article>
       </Layout>

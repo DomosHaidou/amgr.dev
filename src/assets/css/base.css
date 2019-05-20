@@ -25,6 +25,7 @@ html {
     color: #000;
 
     font-weight: 400;
+    font-size: 18px;
     font-family: "Source Serif Pro", Baskerville, "Libre Baskerville", serif;
 }
 body {
@@ -572,6 +573,16 @@ header h1 {
 }
 
 #markdownBody > blockquote:first-child,
+.collapseSummary blockquote {
+    margin: 0 0 1.5em 0;
+    box-shadow:
+        0 0 0 5px #fff inset,
+        0 0 0 6px #ccc inset;
+    border-color: #bbb;
+    padding: 0.9rem 1.25rem 0.95rem 1.25rem;
+}
+
+.essay-content > blockquote:first-child,
 .collapseSummary blockquote {
     margin: 0 0 1.5em 0;
     box-shadow:
@@ -3789,6 +3800,19 @@ body.dnmarrests .tableWrapper#data-table td:last-of-type {
     width: 100vw;
     height: 100vh;
     z-index: -1;
+}
+
+/*************/
+/* Additions */
+
+#page-metadata #abstract {
+    display: block;
+    margin: 0 auto 0.5em auto;
+    font-style: italic;
+}
+
+#page-metadata #topics {
+    text-indent:0;
 }
 
 /*************/

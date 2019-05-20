@@ -11,6 +11,10 @@ import remark from 'remark';
 import recommended from 'remark-preset-lint-recommended';
 import remarkHtml from 'remark-html';
 
+import Helmet from 'react-helmet'
+
+// Inside your component
+
 
 const IndexPage = ({
   data: {
@@ -18,7 +22,7 @@ const IndexPage = ({
     site: {siteMetadata}
   },
 }) => {
-  const Posts = edges
+  const RecentEssays = edges
     .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
     .map(edge => <PostLink key={edge.node.id} post={edge.node} />)
   
@@ -26,12 +30,33 @@ const IndexPage = ({
     .use(recommended)
     .use(remarkHtml)
     .processSync(siteMetadata.description).toString()
+  const information = remark()
+    .use(recommended)
+    .use(remarkHtml)
+    .processSync(siteMetadata.information).toString()
 
-  return (<Layout>
+  return (
+
+
+  <Layout>
+    <Helmet
+        bodyAttributes={{
+            class: 'siteIndex'
+        }}
+    />
     <article>
       <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-      <p dangerouslySetInnerHTML={{__html: description }} />
-      <div>{Posts}</div>
+      <div id="markdownBody">
+      <div id="abstract" dangerouslySetInnerHTML={{__html: description + information }} /> 
+      <section id="recent-essays">
+        <h1>Recent Essays</h1>
+        {RecentEssays}
+      </section>
+      <section id="popular-essays">
+        <h1>Popular Essays</h1>
+        {RecentEssays}
+      </section>
+      </div>
     </article>
   </Layout>)
 }
@@ -43,6 +68,7 @@ query {
   site {
     siteMetadata {
       description
+      information
     }
   }
   allMarkdownRemark(

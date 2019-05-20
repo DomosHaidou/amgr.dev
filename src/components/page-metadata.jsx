@@ -3,9 +3,9 @@ import React from "react"
 
 
 const PageMetadata = ({ abstract, tags }) => (
-      <div id="metadata">
-          <p>{abstract}</p>
-          <p>topics: {tags}</p>
+      <div id="page-metadata">
+          <p id="abstract">{abstract}</p>
+          <p id="topics">topics: {tags}</p>
       </div>
   )
 
