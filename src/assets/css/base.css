@@ -954,6 +954,20 @@ h6 {
     font-size: 1em;
     font-weight: normal;
     font-style: italic;
+    background-color: #666;
+    padding-right: 5px;
+    color: #fff;
+}
+article > :not(#TOC) h1 a:link, 
+article > :not(#TOC) h2 a:link,
+article > :not(#TOC) h3 a:link,
+article > :not(#TOC) h4 a:link,
+article > :not(#TOC) h5 a:link,
+article > :not(#TOC) h6 a:link {
+    background-image: none;
+}
+h3, h4, h5 {
+    text-align: left;
 }
 
 /*  Margins between adjacent headings should collapse.

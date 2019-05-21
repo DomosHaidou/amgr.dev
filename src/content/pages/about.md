@@ -64,7 +64,7 @@ As of July of 2018, I use a **hackintosh** that I build myself, 2 ultra-wide mon
 
 The workstation is plugged into a [900W UPS](https://www.amazon.ca/gp/product/B000FBK3QK/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) for protection against Toronto's shady power grip(real problem over winter).
 
-##### Specifications
+###### Specifications
 - **OS:** 64bit Mac OS X 10.13.3c 17D47
 - **Kernel:** x86_64 Darwin 17.4.0
 - **Shell:** zsh 5.6.2
@@ -77,9 +77,13 @@ The workstation is plugged into a [900W UPS](https://www.amazon.ca/gp/product/B0
 
 #### Laptops
 
+Currently I use two laptops, my daily driver is my original MacBook Pro 15inch 2018 that I been using since early last year, I no longer put client or work related content on this machine, however it still drives note taking, email and side project development.
+
+For office work and business travel I have a similar machine that is compliant with data security policies at my company and is solely dedicated to work related stuff.
+
 ##### MacBook Pro 15inch 2018 (Work)
 
-##### Specifications
+###### Specifications
 - **OS:** 64bit Mac OS X 10.13.3
 - **Kernel:** x86_64 Darwin 17.4.0
 - **Shell:** zsh 5.6.2
@@ -87,14 +91,16 @@ The workstation is plugged into a [900W UPS](https://www.amazon.ca/gp/product/B0
 
 ##### MacBook Pro 15inch 2018 (Personal)
 
-##### Specifications
+###### Specifications
 - **OS:** 64bit Mac OS X 10.13.3
 - **Kernel:** x86_64 Darwin 17.4.0
 - **Shell:** zsh 5.6.2
 
 #### Gaming
+I been using this machine since 2017 as my dedicated gaming rig, I use the same monitor setup 2 ultra-wide monitors mounted one on top of each other and a 27 LG monitor in portrait mode for social media and chats, the main gaming monitor is a [AOC AG352UCG6 35"](https://www.amazon.ca/AOC-AG352UCG6-Screen-LCD-14700510/dp/B07BMVNJZP/ref=sr_1_fkmrnull_1?crid=1XC1588B3ZVPF&keywords=aoc+agon+curved+ultrawide&qid=1558396160&s=gateway&sprefix=Agon+ultra%2Caps%2C153&sr=8-1-fkmrnull) a Corsair Harpoon RGB mouse, Redragon Kumara with Cherry Reds keyboard which has its keys remapped to work well on MacOS.
 
-##### Specifications
+
+###### Specifications
 - **OS:** Windows 10 
 - **Resolution:** 3440x1440 | 3440x1440 | 1920x1080
 - **CPU:** Intel Core i5-
@@ -105,10 +111,34 @@ The workstation is plugged into a [900W UPS](https://www.amazon.ca/gp/product/B0
 
 #### Reading
 
+For reading I use two devices the primary is a **iPad 9.6inch (6th generation)** which primarily serves as a media consumption device for the following apps:
+
+- iBooks
+- getPocket App
+- Feedly
+- Medium
+- Kindle
+
+The second device is a **Kindle Fire 7** which is fairly comfortable for reading as it essentially weights nothing, however its features and overall performance is fairly limited compared to an iPad.
+
 ### Software
+
+I run MacOS 10.14 on both my laptops and my custom build workstation, in all cases I'm using a combination of window tiling managers and tools to automatically organize windows. 
+
+I spend most of my programming time using two editors [VSCode](https://code.visualstudio.com/) and [IntelliJ](https://www.jetbrains.com/idea/); for writing I'm currently using VSCode as my main editor or Vim depending on the type of writing.
 
 ## Profile
 
+This section covers some important things about my personality and a bit of my background short of a biography. Additionally, I added some psychometric information primarily around the [Myers–Briggs Type Indicator](https://en.wikipedia.org/wiki/Myers%E2%80%93Briggs_Type_Indicator) mostly for fun as I don't take this kind of tests as an accurate indicator of ones personality.
+
 ### Personality
 
+In terms of personality I would classify myself as an introvert with a good amount of social skills. I have taken the Myers–Briggs tests in the past and I have almost consistently been classified as a [Mediator INFP](https://www.16personalities.com/infp-personality) type.
+
+> Mediator personalities are true idealists, always looking for the hint of good in even the worst of people and events, searching for ways to make things better. While they may be perceived as calm, reserved, or even shy, Mediators have an inner flame and passion that can truly shine. Comprising just 4% of the population, the risk of feeling misunderstood is unfortunately high for the Mediator personality type – but when they find like-minded people to spend their time with, the harmony they feel will be a fountain of joy and inspiration.
+
 # Contact
+
+- Email: info@allanmacgregor.com
+- Twitter: [@allanmacgregor](http://twitter.com/allanmacgregor)
+- Keybase: [https://keybase.io/allanmacgregor](https://keybase.io/allanmacgregor)

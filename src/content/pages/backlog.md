@@ -15,6 +15,13 @@ confidence: log
 
 ## Ecommerce 
 ### Evolution of Ecommerce Engineering
+Exploration of the Ecommerce Engineering Concept, as ecommerce continues to evolve and grow, with more companies than ever going through digital transformations, the engineering practice around ecommerce is now more important than ever. 
+
+# Philosophy
+
+## Stoicism
+### Exploring the philosophy of Stoicism
+### Applicable Stoicism on Modern life
 
 # Physiology
 
@@ -24,4 +31,10 @@ confidence: log
 
 ## Microdosing
 ### Self-experiment: LSD
+Self-experiment with sub-perceptible doses of LSD.
+
+- [Microdosing LSD](https://thethirdwave.co/microdosing/lsd/)
+- [Does Microdosing makes you smarter](https://www.youtube.com/watch?v=0pcqV3JgGlo)
+
 ### Self-experiment: Cannabis
+Self-experiment with sub-perceptible doses of Cannabis.
