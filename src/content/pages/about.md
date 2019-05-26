@@ -5,6 +5,7 @@ date: "2017-07-12T17:12:33.962Z"
 path: "/pages/about"
 tags: ["personal", "meta", "psychology"]
 status: draft
+published: true
 confidence: likely
 abstract: General information about the author, contributions and contact information.
 ---

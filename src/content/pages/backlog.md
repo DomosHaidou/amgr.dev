@@ -6,6 +6,7 @@ path: "/pages/the-backlog"
 tags: ["notes", "meta", "log"]
 abstract: Meta page intended to collect notes and ideas waiting to be developed
 status: notes
+published: true
 confidence: log
 ---
 

@@ -6,6 +6,7 @@ path: "/pages/site"
 tags: ["information", "meta", "gatsbyJs"]
 abstract: Meta page describing the site concept, purpose and the overall idea to produce long-term content which continues to improve over time; writing methodology, original sources for the idea and overall vision as it evolves
 status: draft
+published: true
 confidence: likely
 ---
 

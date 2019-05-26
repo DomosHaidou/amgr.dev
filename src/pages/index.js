@@ -17,9 +17,9 @@ const IndexPage = ({
   },
 }) => {
   const RecentEssays = edges
+    .filter(edge => (process.env.NODE_ENV === 'development' || edge.node.frontmatter.published))
     .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
     .map(edge => <PostLink key={edge.node.id} post={edge.node} />)
-  
   const description = remark()
     .use(recommended)
     .use(remarkHtml)

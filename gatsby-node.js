@@ -31,6 +31,7 @@ return graphql(`
             abstract
             title
             tags
+            published
           }
         }
       }
@@ -49,6 +50,7 @@ return graphql(`
             date
             path
             title
+            published
           }
         }
       }
@@ -59,9 +61,12 @@ return graphql(`
         return Promise.reject(result.errors);
       }
       const essays = result.data.essays.edges
+      const allowedEssays = essays.filter(post => 
+        (process.env.NODE_ENV === 'development' 
+        || post.node.frontmatter.published));
 
-      // Create post detail pages
-      essays.forEach(({ node }) => {
+      // Create essay pages
+      allowedEssays.forEach(({ node }) => {
           createPage({
             path: node.frontmatter.path,
             component: essayTemplate,
@@ -95,8 +100,12 @@ return graphql(`
 
       const markdownPages = result.data.pages.edges
 
-      // Create post detail pages
-      markdownPages.forEach(({ node }) => {
+      const allowedPages = markdownPages.filter(post => 
+        (process.env.NODE_ENV === 'development' 
+        || post.node.frontmatter.published));
+
+      // Create pages 
+      allowedPages.forEach(({ node }) => {
           createPage({
             path: node.frontmatter.path,
             component: markdownPageTemplate,

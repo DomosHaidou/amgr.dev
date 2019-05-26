@@ -4,6 +4,7 @@ description: Self-experiment with sub-psychedelic doses of LSD; no benefit
 date: "2017-07-12T17:12:33.962Z"
 tags: ["nootropics", "psychology", "experiments", "predictions", "statistics", "Silk Road"]
 status: finished
+published: false
 confidence: likely
 path: "/essay/example-essay"
 abstract: History, background, visiting, ordering, using, & analyzing the drug market Silk Road 1
