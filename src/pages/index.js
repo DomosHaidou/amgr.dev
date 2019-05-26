@@ -5,16 +5,10 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import PostLink from "../components/post-link"
-
-
 import remark from 'remark';
 import recommended from 'remark-preset-lint-recommended';
 import remarkHtml from 'remark-html';
-
 import Helmet from 'react-helmet'
-
-// Inside your component
-
 
 const IndexPage = ({
   data: {
