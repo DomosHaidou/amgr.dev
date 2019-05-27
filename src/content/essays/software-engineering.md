@@ -12,6 +12,51 @@ abstract: Software engineering is the application of engineering to the developm
 
 >Software engineering is the application of a systematic, disciplined, quantifiable approach to the design, development, operation, and maintenance of software, and the study of these approaches; that is, the application of engineering to software. -- IEEE
 
+Is often said that software is eating the world, software is needed on almost every industry, in every business and even now inside our bodies operating devices like insulin pumps and peace makers. 
+
+And yet Software development as a discipline is still not well defined, it has proven difficult to tasks, in fact in many cases Software Engineering is [not considering a real Engineering discipline](https://www.theatlantic.com/technology/archive/2015/11/programmers-should-not-call-themselves-engineers/414271/).
+
+## Knowledge Areas
+
+According to the Software Engineering Body of Knowledge (SWEBOK) standard the following are the recognized knowledge areas within the field of software engineering:
+
+### 1. Software Requirements
+
+### 2. Software Design 
+
+### 3. Software Construction
+
+### 4. Software Testing
+
+### 5. Software Maintenance 
+
+### 6. Software Configuration Management
+
+### 7. Software Engineering Management
+
+### 8. Software Development Process 
+
+### 9. Software Quality
+
+### 10. Software engineering models and methods
+
+### 11. Software engineering professional practice
+
+### 12. Software engineering economics
+
+### 13. Computing foundations
+
+### 14. Mathematical foundations
+
+### 15. Engineering foundations
+
+
+## Sub-disciplines
+
+### eCommerce 
+
+### Financial Technology (FinTech)
+
 
 # External Links
 
