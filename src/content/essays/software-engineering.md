@@ -14,11 +14,13 @@ abstract: Software engineering is the application of engineering to the developm
 
 Is often said that software is eating the world, software is needed on almost every industry, in every business and even now inside our bodies operating devices like insulin pumps and peace makers. 
 
-And yet Software development as a discipline is still not well defined, it has proven difficult to tasks, in fact in many cases Software Engineering is [not considering a real Engineering discipline](https://www.theatlantic.com/technology/archive/2015/11/programmers-should-not-call-themselves-engineers/414271/).
+And yet Software engineering as a discipline is still not well defined, it has proven difficult to tasks, in fact in many cases Software Engineering is [not considering a real Engineering discipline](https://www.theatlantic.com/technology/archive/2015/11/programmers-should-not-call-themselves-engineers/414271/).
+
+Is important that we start we a solid, comprehensive and agreed definition of Software Engineering; as a starting point we can take the [Institute of Electrical and Electronics Engineers (IEEE)](https://en.wikipedia.org/wiki/Institute_of_Electrical_and_Electronics_Engineers) definition described in the **Software Engineering Body of Knowledge**.
 
 ## Knowledge Areas
 
-According to the Software Engineering Body of Knowledge (SWEBOK) standard the following are the recognized knowledge areas within the field of software engineering:
+According to the [Software Engineering Body of Knowledge (SWEBOK)](https://en.wikipedia.org/wiki/Software_Engineering_Body_of_Knowledge) standard the following are the recognized knowledge areas within the field of software engineering:
 
 ### 1. Software Requirements
 
@@ -52,6 +54,8 @@ According to the Software Engineering Body of Knowledge (SWEBOK) standard the fo
 
 
 ## Sub-disciplines
+
+The following is a non-exhaustive list of Software Engineering sub-disciplines that I consider both emerging and extremely interesting.
 
 ### eCommerce 
 
