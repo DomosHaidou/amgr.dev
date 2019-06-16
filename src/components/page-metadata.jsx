@@ -3,7 +3,6 @@ import React from "react"
 import { Link } from "gatsby"
 const _ = require("lodash");
 
-
 const PageMetadata = ({ abstract, tags, updated_at, created_at, status, confidence }) => (
       <div id="page-metadata">
           <p id="abstract">{abstract}</p>

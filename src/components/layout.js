@@ -12,7 +12,7 @@ import Image from "../components/image"
 
 import Header from "./header"
 import "../assets/css/base.css"
-import "../assets/css/prism-base2tone-evening-dark.css"
+import "../assets/css/simple-grid.css"
 import PageMetadata from "./page-metadata";
 
 const Layout = ({ children }) => (
