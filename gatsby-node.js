@@ -15,7 +15,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
   const markdownPageTemplate = path.resolve(`src/templates/markdown-page.jsx`);
 return graphql(`
   {
-    essays: allMarkdownRemark(
+    essays: allMdx(
       sort: { order: DESC, fields: [frontmatter___date] }
       filter: { fileAbsolutePath: {regex : "/essays/"} },
       limit: 1000
@@ -36,7 +36,7 @@ return graphql(`
         }
       }
     }
-    pages: allMarkdownRemark(
+    pages: allMdx(
       sort: { order: DESC, fields: [frontmatter___date] }
       filter: { fileAbsolutePath: {regex : "/pages/"} },
       limit: 1000
@@ -117,7 +117,7 @@ return graphql(`
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions;
-  if (node.internal.type !== 'MarkdownRemark') {
+  if (node.internal.type !== 'Mdx') {
     return;
   }
   const fileNode = getNode(node.parent);

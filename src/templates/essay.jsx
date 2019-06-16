@@ -1,12 +1,15 @@
 import React from "react";
 import Helmet from "react-helmet";
 import PageMetadata from "../components/page-metadata";
+import TOC from "../components/toc";
 import Layout from "../components/layout"
+import MDXRenderer from "gatsby-mdx/mdx-renderer";
+
 
 export default function Template({
     data
 }) {
-    const essay = data.markdownRemark; 
+    const essay = data.mdx; 
     return (
       <Layout>
         <header><h1>{essay.frontmatter.title}</h1></header>
@@ -14,13 +17,16 @@ export default function Template({
           <div class="metadata-container">
               <PageMetadata updated_at={essay.fields.modifiedTime} abstract={ essay.frontmatter.abstract} tags={essay.frontmatter.tags}  created_at={essay.frontmatter.date} confidence={essay.frontmatter.confidence} status={essay.frontmatter.status} />
           </div>
-          <div id="TOC" dangerouslySetInnerHTML={{ __html: essay.tableOfContents }}/> 
+          <div id="TOC">
+          <React.Fragment>
+            <TOC item={essay.tableOfContents} level={0} maxDepth={3}/> 
+          </React.Fragment>
+          </div>          
           <div id="markdownBody">
             <Helmet title={`CodeStack - ${essay.frontmatter.title}`} />
-              <div
-                className="essay-content"
-                dangerouslySetInnerHTML={{ __html: essay.html }}
-              />
+              <div className="essay-content">
+                <MDXRenderer>{essay.code.body}</MDXRenderer>
+              </div>
           </div>
         </article>
       </Layout>
@@ -29,14 +35,14 @@ export default function Template({
 
 export const pageQuery = graphql`
   query EssayByPath($path: String!) {
-    markdownRemark(frontmatter: { path: { eq: $path }}) {
+    mdx(frontmatter: { path: { eq: $path }}) {
       html
-      tableOfContents(
-        pathToSlugField: "frontmatter.path"
-        maxDepth: 4
-      )
+      code {
+        body
+      }
+      tableOfContents
       fields{
-        modifiedTime(formatString: "MMMM DD, YYYY")
+        modifiedTime
       }
       frontmatter {
         date(formatString: "MMMM DD, YYYY")

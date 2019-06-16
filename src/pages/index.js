@@ -12,7 +12,7 @@ import Helmet from 'react-helmet'
 
 const IndexPage = ({
   data: {
-    allMarkdownRemark: { edges },
+    allMdx: { edges },
     site: {siteMetadata}
   },
 }) => {
@@ -65,7 +65,7 @@ query {
       information
     }
   }
-  allMarkdownRemark(
+  allMdx(
       filter: { fileAbsolutePath: {regex : "/essays/"} },
       sort: {fields: [frontmatter___date], order: DESC},
   ){
