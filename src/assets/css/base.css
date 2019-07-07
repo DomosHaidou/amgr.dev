@@ -32,6 +32,29 @@ body {
     max-width: 112ch;
 }
 
+blockquote{
+  font-size: 30px;
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: .5em 10px;
+  padding: 0 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+  padding: 10px 20px;
+  line-height: 1.4;
+}
+
+blockquote:before {
+  content: open-quote;
+  display: inline;
+  height: 0;
+  line-height: 0;
+  left: -10px;
+  position: relative;
+  top: 30px;
+  color: #ccc;
+  font-size: 3em;
+}
+
 strong, b {
     font-weight: 700;
 }
@@ -3077,13 +3100,13 @@ body.dnmarrests .tableWrapper#data-table td:last-of-type {
 /*= Hover styles =*/
 /*=--------------=*/
 
-#markdownBody img:hover {
+/* #markdownBody img:hover {
     filter: drop-shadow(0 0 3px #777);
     cursor: zoom-in;
 }
 #markdownBody img:active {
     transform: scale(0.975);
-}
+} */
 
 /*=---------=*/
 /*= Overlay =*/

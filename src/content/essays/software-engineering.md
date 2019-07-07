@@ -18,48 +18,48 @@ And yet Software engineering as a discipline is still not well defined, it has p
 
 Is important that we start we a solid, comprehensive and agreed definition of Software Engineering; as a starting point we can take the [Institute of Electrical and Electronics Engineers (IEEE)](https://en.wikipedia.org/wiki/Institute_of_Electrical_and_Electronics_Engineers) definition described in the **Software Engineering Body of Knowledge**.
 
-## Knowledge Areas
+# Knowledge Areas
 
 According to the [Software Engineering Body of Knowledge (SWEBOK)](https://en.wikipedia.org/wiki/Software_Engineering_Body_of_Knowledge) standard the following are the recognized knowledge areas within the field of software engineering:
 
-### 1. Software Requirements
+## 1. Software Requirements
 
-### 2. Software Design 
+## 2. Software Design 
 
-### 3. Software Construction
+## 3. Software Construction
 
-### 4. Software Testing
+## 4. Software Testing
 
-### 5. Software Maintenance 
+## 5. Software Maintenance 
 
-### 6. Software Configuration Management
+## 6. Software Configuration Management
 
-### 7. Software Engineering Management
+## 7. Software Engineering Management
 
-### 8. Software Development Process 
+## 8. Software Development Process 
 
-### 9. Software Quality
+## 9. Software Quality
 
-### 10. Software engineering models and methods
+## 10. Software engineering models and methods
 
-### 11. Software engineering professional practice
+## 11. Software engineering professional practice
 
-### 12. Software engineering economics
+## 12. Software engineering economics
 
-### 13. Computing foundations
+## 13. Computing foundations
 
-### 14. Mathematical foundations
+## 14. Mathematical foundations
 
-### 15. Engineering foundations
+## 15. Engineering foundations
 
 
-## Sub-disciplines
+# Sub-disciplines
 
 The following is a non-exhaustive list of Software Engineering sub-disciplines that I consider both emerging and extremely interesting.
 
-### eCommerce 
+## eCommerce 
 
-### Financial Technology (FinTech)
+## Financial Technology (FinTech)
 
 
 # External Links
