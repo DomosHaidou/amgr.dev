@@ -4,7 +4,7 @@ description: Notes, thoughts and research on the practice of software engineerin
 date: "2019-05-26"
 tags: ["ecommerce", "fintech", "software development", "programming", "engineering"]
 status: notes
-published: false
+published: true
 confidence: speculation
 path: "/essay/software-engineering"
 abstract: Software engineering is the application of engineering to the development of software in a systematic method. As software expands into new and different fields new specialties and disciplines will emerge, in particular I'm interested on the fields of ecommerce and financial technology.

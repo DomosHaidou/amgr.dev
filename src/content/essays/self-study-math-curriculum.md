@@ -4,7 +4,7 @@ description:
 date: "2019-06-18 07:15:07"
 tags: ["mathematics", "learning", "machine learning", "education"]
 status: notes
-published: false
+published: true
 confidence: speculation
 path: "/essays/self-study-math-curriculum"
 abstract: 
