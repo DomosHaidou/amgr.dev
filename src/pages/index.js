@@ -75,6 +75,7 @@ query {
         frontmatter {
           date(formatString: "MMMM DD, YYYY")
           path
+          published
           title
           tags
           status
