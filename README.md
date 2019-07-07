@@ -1,3 +1,8 @@
+# AMGR.dev
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/54073385-5f87-49d2-90f4-ae7ca31cc837/deploy-status)](https://app.netlify.com/sites/frosty-bardeen-8c2507/deploys)
+
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">
