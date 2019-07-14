@@ -24,25 +24,49 @@ According to the [Software Engineering Body of Knowledge (SWEBOK)](https://en.wi
 
 ## 1. Software Requirements
 
+> [Software requirements](https://en.wikipedia.org/wiki/Software_requirements) is a field within software engineering that deals with establishing the needs of stakeholders that are to be solved by software. 
+
 ## 2. Software Design 
+
+> [Software design](https://en.wikipedia.org/wiki/Software_design) is the process by which an agent creates a specification of a software artifact, intended to accomplish goals, using a set of primitive components and subject to constraints.
 
 ## 3. Software Construction
 
+> [Software construction](https://en.wikipedia.org/wiki/Software_construction) is the detailed creation of working meaningful software through a combination of coding, verification, unit testing, integration testing, and debugging. 
+
 ## 4. Software Testing
+
+> [Software testing](https://en.wikipedia.org/wiki/Software_testing) is an investigation conducted to provide stakeholders with information about the quality of the software product or service under test. Software testing can also provide an objective, independent view of the software to allow the business to appreciate and understand the risks of software implementation.
 
 ## 5. Software Maintenance 
 
+> [Software maintenance](https://en.wikipedia.org/wiki/Software_maintenance) in software engineering is the modification of a software product after delivery to correct faults, to improve performance or other attributes
+
 ## 6. Software Configuration Management
+
+> In software engineering, [software configuration management](https://en.wikipedia.org/wiki/Software_configuration_management) is the task of tracking and controlling changes in the software, part of the larger cross-disciplinary field of configuration management.
 
 ## 7. Software Engineering Management
 
+> [Engineering management](https://en.wikipedia.org/wiki/Engineering_management#Information_technologies) is a career that brings together the technological problem-solving ability of engineering and the organizational, administrative, and planning abilities of management in order to oversee the operational performance of complex engineering driven enterprises.
+
 ## 8. Software Development Process 
+
+> [Software Development Process](https://en.wikipedia.org/wiki/Software_development_process) is the process of dividing software development work into distinct phases to improve design, product management, and project management.
 
 ## 9. Software Quality
 
+>  [Software quality](https://en.wikipedia.org/wiki/Software_quality) refers to two related but distinct notions:
+> - **Software functional quality** reflects how well it complies with or conforms to a given design, based on functional requirements or specifications. That attribute can also be described as the fitness for purpose of a piece of software or how it compares to competitors in the marketplace as a worthwhile product. It is the degree to which the correct software was produced.
+> - **Software structural quality** refers to how it meets non-functional requirements that support the delivery of the functional requirements, such as robustness or maintainability. It has a lot more to do with the degree to which the software works as needed.
+
 ## 10. Software engineering models and methods
 
+> [Software engineering](https://en.wikipedia.org/wiki/Software_engineering) is the application of engineering to the development of software in a systematic method.
+
 ## 11. Software engineering professional practice
+
+> [Software engineering professionalism](https://en.wikipedia.org/wiki/Software_engineering_professionalism) is a movement to make software engineering a profession, with aspects such as degree and certification programs, professional associations, professional ethics, and government licensing. 
 
 ## 12. Software engineering economics
 
