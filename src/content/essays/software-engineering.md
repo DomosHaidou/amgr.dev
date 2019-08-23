@@ -83,6 +83,12 @@ The following is a non-exhaustive list of Software Engineering sub-disciplines t
 
 ## eCommerce 
 
+I like to think about Ecommerce software development as its own particular sub-discipline within the field of software engineering, traditional ecommerce development has been considered just web development but in ever moving, ever growing industry like ecommerce; there is too much specific domain knowledge needed in order for engineers to be effective at their job. 
+
+Knowing the basics of web development is no longer enough for being an effective ecommerce engineer; when we break it down there are many domains inside of the ecommerce field that a developer must be familiar with:
+
+
+
 ## Financial Technology (FinTech)
 
 
