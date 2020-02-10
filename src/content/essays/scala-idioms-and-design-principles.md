@@ -22,3 +22,12 @@ While Fox goal was to widely inform his readers about the options and possibilit
 > Generally speaking, a programming idiom is a natural language expression of a simple task, algorithm, or data structure that is not a built-in feature in the programming language being used, or, conversely, the use of an unusual or notable feature that is built into a programming language.
 -- [Programing Idiom - Wikipedia](https://en.wikipedia.org/wiki/Programming_idiom)
 
+# Breaking down the dialect 
+
+Another way to approach the challenge of learning Scala is to think about it as a language with many different dialects that can be combined at will, as developers our focus should be on learning and understanding this dialects to be able to use the language effectively. 
+
+
+# References
+- [Twitter Effective Scala](https://twitter.github.io/effectivescala/)
+- [Scala Idioms - Dominic Fox](https://leanpub.com/scalaidioms/read)
+- [Programming Idioms](https://www.programming-idioms.org)

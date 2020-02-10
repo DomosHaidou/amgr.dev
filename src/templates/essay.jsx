@@ -36,7 +36,6 @@ export default function Template({
 export const pageQuery = graphql`
   query EssayByPath($path: String!) {
     mdx(frontmatter: { path: { eq: $path }}) {
-      html
       code {
         body
       }
