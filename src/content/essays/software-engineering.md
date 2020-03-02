@@ -1,18 +1,18 @@
 ---
 title: Software Engineering
-description: Notes, thoughts and research on the practice of software engineering
+description: Notes, thoughts, and research on the practice of software engineering
 date: "2019-05-26"
-tags: ["ecommerce", "fintech", "software development", "programming", "engineering"]
+tags: ["e-commerce", "fintech", "software development", "programming", "engineering"]
 status: notes
 published: true
 confidence: speculation
 path: "/essay/software-engineering"
-abstract: Software engineering is the application of engineering to the development of software in a systematic method. As software expands into new and different fields new specialties and disciplines will emerge, in particular I'm interested on the fields of ecommerce and financial technology.
+abstract: Software engineering is the application of engineering to the development of software in a systematic method. As software expands into new and different fields new specialties and disciplines will emerge, in particular, I'm interested in the fields of e-commerce and financial technology.
 ---
 
 >Software engineering is the application of a systematic, disciplined, quantifiable approach to the design, development, operation, and maintenance of software, and the study of these approaches; that is, the application of engineering to software. -- IEEE
 
-Is often said that software is eating the world, software is needed on almost every industry, in every business and even now inside our bodies operating devices like insulin pumps and peace makers. 
+It is often said that software is eating the world, software is needed at almost every industry, in every business and even now inside our bodies operating devices like insulin pumps and pacemakers. 
 
 And yet Software engineering as a discipline is still not well defined, it has proven difficult to tasks, in fact in many cases Software Engineering is [not considering a real Engineering discipline](https://www.theatlantic.com/technology/archive/2015/11/programmers-should-not-call-themselves-engineers/414271/).
 
@@ -20,7 +20,7 @@ Is important that we start we a solid, comprehensive and agreed definition of So
 
 # Knowledge Areas
 
-According to the [Software Engineering Body of Knowledge (SWEBOK)](https://en.wikipedia.org/wiki/Software_Engineering_Body_of_Knowledge) standard the following are the recognized knowledge areas within the field of software engineering:
+According to the [Software Engineering Body of Knowledge (SWEBOK)](https://en.wikipedia.org/wiki/Software_Engineering_Body_of_Knowledge) standard, the following are the recognized knowledge areas within the field of software engineering:
 
 ## 1. Software Requirements
 
@@ -48,11 +48,11 @@ According to the [Software Engineering Body of Knowledge (SWEBOK)](https://en.wi
 
 ## 7. Software Engineering Management
 
-> [Engineering management](https://en.wikipedia.org/wiki/Engineering_management#Information_technologies) is a career that brings together the technological problem-solving ability of engineering and the organizational, administrative, and planning abilities of management in order to oversee the operational performance of complex engineering driven enterprises.
+> [Engineering Management](https://en.wikipedia.org/wiki/Engineering_management#Information_technologies) is a career that brings together the technological problem-solving ability of engineering and the organizational, administrative, and planning abilities of management in order to oversee the operational performance of complex engineering driven enterprises.
 
 ## 8. Software Development Process 
 
-> [Software Development Process](https://en.wikipedia.org/wiki/Software_development_process) is the process of dividing software development work into distinct phases to improve design, product management, and project management.
+> [Software Development Process](https://en.wikipedia.org/wiki/Software_development_process) is the process of dividing software development work into distinct phases to improve the design, product management, and project management.
 
 ## 9. Software Quality
 
@@ -83,9 +83,9 @@ The following is a non-exhaustive list of Software Engineering sub-disciplines t
 
 ## eCommerce 
 
-I like to think about Ecommerce software development as its own particular sub-discipline within the field of software engineering, traditional ecommerce development has been considered just web development but in ever moving, ever growing industry like ecommerce; there is too much specific domain knowledge needed in order for engineers to be effective at their job. 
+I like to think about e-commerce software development as its own particular sub-discipline within the field of software engineering, traditional e-commerce development has been considered just web development but in ever moving, ever-growing industry like e-commerce; there is too much specific domain knowledge needed in order for engineers to be effective at their job. 
 
-Knowing the basics of web development is no longer enough for being an effective ecommerce engineer; when we break it down there are many domains inside of the ecommerce field that a developer must be familiar with:
+Knowing the basics of web development is no longer enough for being an effective e-commerce engineer; when we break it down there are many domains inside of the e-commerce field that a developer must be familiar with:
 
 
 
