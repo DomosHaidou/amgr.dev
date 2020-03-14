@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "@mdx-js/mdx": "^1.0.20",
+    "@mdx-js/mdx": "^1.5.6",
     "@mdx-js/react": "^1.0.20",
     "@mdx-js/tag": "^0.20.3",
     "bufferutil": "^4.0.1",
